@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-/* Fundo do site 100% branco */
+/* Fundo completamente transparente para integração limpa no FiveM DUI */
 html, body {
-  background-color: #ffffff !important;
-  background: #ffffff !important;
+  background-color: transparent !important;
+  background: transparent !important;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -50,7 +50,7 @@ html, body {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Classe quando desativado (opcional) */
+/* Classe quando desativado */
 .tab-container.inactive .tab-indicator {
   opacity: 0;
   transform: translateY(4px);
