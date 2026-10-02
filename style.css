@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo do site 100% branco */
+html, body {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container do Card/Tab estilo imagem */
+.tab-container {
+  position: relative;
+  width: 220px;
+  height: 100px;
+  background-color: #121214;
+  border-radius: 14px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+/* Efeito ao passar o rato e clicar */
+.tab-container:hover {
+  background-color: #18181c;
+}
+
+.tab-container:active {
+  transform: scale(0.97);
+}
+
+/* Linha Indicadora Azul na parte inferior */
+.tab-indicator {
+  width: 60px;
+  height: 8px;
+  background-color: #3b82f6; /* Azul vibrante estilo DUI */
+  border-radius: 4px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Classe quando desativado (opcional) */
+.tab-container.inactive .tab-indicator {
+  opacity: 0;
+  transform: translateY(4px);
+}
