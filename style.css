@@ -41,11 +41,11 @@ html, body {
   transform: scale(0.97);
 }
 
-/* Linha Indicadora Azul na parte inferior */
+/* Linha Indicadora Branca na parte inferior */
 .tab-indicator {
   width: 60px;
   height: 8px;
-  background-color: #3b82f6; /* Azul vibrante estilo DUI */
+  background-color: #ffffff; /* Alterado para BRANCO */
   border-radius: 4px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
